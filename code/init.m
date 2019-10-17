@@ -24,20 +24,20 @@ switch (controller)
    case 2 % Backstepping
        disp('Backstepping')
        if (k == 4.0)
-            kp = 0.8;
-            kd = 0.08;
+            kp = 65.0;
+            kd = 12.0;
        elseif (k == 400.0)
-            kp = 100;
-            kd = 20;
+            kp = 60;
+            kd = 5;
        end
    case 3 % Robustified Backstepping
        disp('Robustified Backstepping')
        if (k == 4.0)
-            kp = 43.0;
-            kd = 49.0;
+            kp = 65;
+            kd = 12;
        elseif (k == 400.0)
-            kp = 100;
-            kd = 20;
+            kp = 190;
+            kd = 55;
        end
    case 4 % Decoupling Based
        disp('Decoupling')
